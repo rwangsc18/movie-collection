@@ -34,7 +34,7 @@ def find_movie(movie_list):
     movie_title = input("Enter the movie title you want to find: ")
 
     for movie in movie_list:
-        if movie['title'] == movie_title:
+        if movie['title'].lower() == movie_title.lower():
             print("Find the movie!")
             print(f"Title {movie['title']}", f"Director {movie['director']}", f"Year {movie['year']}", sep=', ')
             break
